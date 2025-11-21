@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/GazeScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b86affe
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/GazeCalibration.unity
+    guid: 6dfdb97238d927e4c9eb10ac700a11fa
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/GazeEvaluation.unity
+    guid: 7e84533b66fc6b044aaeb9a9e6f52224
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/GazeGame.unity
+    guid: a106887defdccb3429b768dbb7986dfa
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/GazeMainMenu.unity
+    guid: 57b1069b2e44d1d45b2457cc29380030
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/HomulerGazeCalibration.unity
+    guid: 305dafb1ec217cd4ba4c939abdafd133
+  - enabled: 1
+    path: Packages/de.uniulm.uniteye/Scenes/HomulerGazeScene.unity
+    guid: b56f243d2dae1fa489c7b00398f1db5f
   m_configObjects: {}

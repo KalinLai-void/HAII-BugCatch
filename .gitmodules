@@ -1,0 +1,3 @@
+[submodule "uniteye"]
+	path = uniteye
+	url = https://github.com/wgnrto/uniteye.git
