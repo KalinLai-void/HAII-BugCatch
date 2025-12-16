@@ -17,6 +17,11 @@ namespace Mediapipe.Unity
     private readonly object _currentTargetLock = new object();
     private HandLandmarkerResult _currentTarget;
 
+    public HandLandmarkerResult CurrentTarget
+    {
+        get { return _currentTarget; }
+    }
+
     public void DrawNow(HandLandmarkerResult target)
     {
       target.CloneTo(ref _currentTarget);

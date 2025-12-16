@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5987288207374909770}
   - component: {fileID: 4854035044496938716}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MultiPoseLandmarkListWithMaskAnnotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,14 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 618f0a05cbf326799b0869858fb2a76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _annotationPrefab: {fileID: 6258456134762946104, guid: 781ab0ae64dd1bc4db2ccf4f84c6961e,
-    type: 3}
+  _annotationPrefab: {fileID: 6258456134762946104, guid: 781ab0ae64dd1bc4db2ccf4f84c6961e, type: 3}
   _leftLandmarkColor: {r: 1, g: 0.5411765, b: 0, a: 1}
   _rightLandmarkColor: {r: 0, g: 0.8509804, b: 0.90588236, a: 1}
   _landmarkRadius: 15
   _connectionColor: {r: 1, g: 1, b: 1, a: 1}
   _connectionWidth: 1
-  _maskScreen: {fileID: 0}
+  _screen: {fileID: 0}
   _maskTexture: {fileID: 0}
   _color: {r: 0, g: 1, b: 0, a: 1}
   _maskThreshold: 0.9

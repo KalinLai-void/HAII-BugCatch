@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6126614599356786721}
   - component: {fileID: 7085584469682675472}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: MultiPoseLandmarkListAnnotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,8 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 391c66bb10883ff52acbde8b6f39b0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _annotationPrefab: {fileID: 1915238444563462411, guid: 4418f6a92856c5b51b58a36e3be7ed5c,
-    type: 3}
+  _annotationPrefab: {fileID: 1915238444563462411, guid: 4418f6a92856c5b51b58a36e3be7ed5c, type: 3}
   _leftLandmarkColor: {r: 1, g: 0.5411765, b: 0, a: 1}
   _rightLandmarkColor: {r: 0, g: 0.8509804, b: 0.90588236, a: 1}
   _landmarkRadius: 15
