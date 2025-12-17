@@ -30,17 +30,18 @@ public class AimComtroller : MonoBehaviour
 
     private void CheckRayCast()
     {
-        Vector3 screenPos;
+        Vector3 aimScreenPos;
         if (canvas.renderMode == RenderMode.ScreenSpaceOverlay)
         {
-            screenPos = aimImage.GetComponent<RectTransform>().transform.position;
+            aimScreenPos = aimImage.GetComponent<RectTransform>().transform.position;
         }
         else
         {
-            screenPos = Camera.main.WorldToScreenPoint(aimImage.GetComponent<RectTransform>().transform.position);
+            aimScreenPos = Camera.main.WorldToScreenPoint(aimImage.GetComponent<RectTransform>().transform.position);
         }
 
-        if(Physics.Raycast(Camera.main.ScreenPointToRay(screenPos), out RaycastHit hit, 1000f))
+
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(aimScreenPos), out RaycastHit hit, 1000f))
         {
             Debug.Log(hit.collider.gameObject.name);
         }
