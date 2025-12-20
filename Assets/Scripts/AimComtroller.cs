@@ -10,6 +10,18 @@ public class AimComtroller : MonoBehaviour
 
     [SerializeField] private Canvas canvas;
     [SerializeField] private Image aimImage;
+    [SerializeField] private float rayDist = 1000f;
+
+    [Header("Bot Settings")]
+    [SerializeField] private GameObject bot;
+    [SerializeField] private Vector3 botToAimDist;
+
+    private Vector3 botOriginRot;
+
+    private void Start()
+    {
+        if (bot != null) botOriginRot = bot.transform.eulerAngles;
+    }
 
     private void Update()
     {
@@ -40,10 +52,33 @@ public class AimComtroller : MonoBehaviour
             aimScreenPos = Camera.main.WorldToScreenPoint(aimImage.GetComponent<RectTransform>().transform.position);
         }
 
-
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(aimScreenPos), out RaycastHit hit, 1000f))
+        Ray aimRay = Camera.main.ScreenPointToRay(aimScreenPos);
+        if (Physics.Raycast(aimRay, out RaycastHit hit, rayDist))
         {
-            Debug.Log(hit.collider.gameObject.name);
+            MoveBot(aimRay, hit);
+            //Debug.Log(hit.collider.gameObject.name);
         }
+    }
+
+    private void MoveBot(Ray ray, RaycastHit hit)
+    {
+        Vector3 pos = ray.GetPoint(
+            Vector3.Distance(hit.collider.transform.position, Camera.main.transform.position) - 1f
+            );
+
+        float direction = 1;
+        if (handController.GetRightOrLeftHand() == "Left") direction -= 2;
+
+        bot.transform.position = new Vector3(
+            pos.x + botToAimDist.x * direction, 
+            pos.y + botToAimDist.y,
+            pos.z + botToAimDist.z
+            );
+
+        bot.transform.eulerAngles = new Vector3(
+            botOriginRot.x,
+            botOriginRot.y * direction,
+            botOriginRot.z
+            );
     }
 }

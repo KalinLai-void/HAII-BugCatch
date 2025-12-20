@@ -22,6 +22,14 @@ namespace Mediapipe.Unity
         get { return _currentTarget; }
     }
 
+    public string GetRightOrLeftHand()
+    {
+        string hand = _currentTarget.handedness[0].categories[0].categoryName;
+        if (hand == "Right") hand = "Left";
+        else hand = "Right"; // Because screen flip
+        return hand;
+    }
+
     public void DrawNow(HandLandmarkerResult target)
     {
       target.CloneTo(ref _currentTarget);

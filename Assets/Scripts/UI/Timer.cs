@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
 
     private float time;
 
-    public bool isFinished;
+    public bool isFinished = false;
 
     private void Start()
     {
@@ -19,7 +19,16 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.instance.isPaused) return;
+        if (isFinished) { };
+
         time -= Time.deltaTime;
+        if (time <= 0)
+        {
+            time = 0;
+            isFinished = true; 
+        }
+
         UpdateUI();
     }
 
