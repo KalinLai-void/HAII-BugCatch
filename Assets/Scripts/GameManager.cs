@@ -19,6 +19,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void PauseGame()
+    {
+        isPaused = true;
+    }
+
+    public void ContinueGame()
+    {
+        isPaused = false;
+    }
+
     public void LoadScene(SceneAsset scene)
     {
         SceneManager.LoadScene(scene.name);

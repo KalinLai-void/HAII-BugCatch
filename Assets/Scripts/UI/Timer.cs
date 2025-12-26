@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
     private void Update()
     {
         if (GameManager.instance.isPaused) return;
-        if (isFinished) { };
+        if (isFinished) { UIManager.instance.TurnOnUI(UIinGame.EndUI); };
 
         time -= Time.deltaTime;
         if (time <= 0)

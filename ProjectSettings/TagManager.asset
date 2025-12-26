@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Global Resource
+  - Spider
+  - Termite
+  - Bee
+  - Mosquito
+  - Cockroach
   layers:
   - Default
   - TransparentFX
@@ -14,7 +19,7 @@ TagManager:
   - UI
   - MediaPipeUI
   - PostProcessing
-  - 
+  - Bug
   - 
   - 
   - 
