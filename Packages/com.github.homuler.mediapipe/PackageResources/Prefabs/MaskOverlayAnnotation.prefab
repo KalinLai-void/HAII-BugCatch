@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4870111229818662210}
   - component: {fileID: 3454231179941771272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MaskOverlayAnnotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206b8342d43008d70b3754b4e109172a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseScreen: {fileID: 0}
   _maskShader: {fileID: 4800000, guid: 30ce68fc8909565718481dab17fb62cd, type: 3}
   _maskTexture: {fileID: 0}
   _color: {r: 0, g: 1, b: 0, a: 1}
