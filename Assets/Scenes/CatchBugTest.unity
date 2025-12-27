@@ -13095,13 +13095,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChatGemini
   url: https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent
   m_Prompt: "\u4F60\u662F\u4E00\u500B\u6606\u87F2\u8FA8\u8B58\u6A5F\u5668\u4EBA\uFF0C\u4F60\u8981\u4F9D\u7167\u6211\u7D66\u7684\u683C\u5F0F\u4F86\u8F38\u51FA\u5167\u5BB9\uFF0C\u4E0D\u8981\u8F38\u51FA\u904E\u591A\u7121\u610F\u7FA9\u7684\u6587\u5B57\n\n#
-    \u6606\u87F2\u6E05\u55AE\n- \u8718\u86DB\n- \u868A\u5B50\n- \u871C\u8702\n- \u879E\u87FB\n-
+    \u6606\u87F2\u6E05\u55AE\n- \u8718\u86DB\n- \u868A\u5B50\n- \u871C\u8702\n- \u98DB\u87FB\uFF08\u5927\u767D\u87FB\uFF09\n-
     \u87D1\u8782\n\n\u6211\u6703\u5F9E\u4EE5\u4E0A\u6606\u87F2\u6E05\u55AE\u9078\u64C7\u4E00\u500B\u544A\u8A34\u4F60\uFF0C\u4F60\u8981\u7D66\u6211\u6709\u95DC\u65BC\u8A72\u6606\u87F2\u7684<\u4ECB\u7D39>\uFF0C\u800C\u8A72\u6606\u87F2\u64C1\u6709<\u500B\u6027>\uFF0C\u8ACB\u5E6B\u6211\u96A8\u6A5F\u751F\u6210\u4E00\u500B\u500B\u6027\n\n\u4E14\u4F9D\u7167\u6606\u87F2\u7684\u500B\u6027\uFF0C\u96A8\u6A5F\u751F\u6210\u4E00\u53E5\u5C0D\u73A9\u5BB6\u8AAA\u7684<\u5C0D\u8A71>\uFF0C\u8981\u642D\u914D\u984F\u6587\u5B57\u8868\u9054\u5176\u60C5\u7DD2\n\n#
     \u8F38\u51FA\u683C\u5F0F\n<personality>\u6606\u87F2\u500B\u6027\u653E\u5728\u9019\u88E1\uFF0C\u8A72\u500B\u6027\u6703\u5F71\u97FF\u4ED6\u7684\u8AAA\u8A71\u65B9\u5F0F</personality>\n<intro>\u6606\u87F2\u4ECB\u7D39\u653E\u5728\u9019\u88E1\uFF0C\u5305\u62EC\u5176\u500B\u6027</intro>\n<dialog>\u6606\u87F2\u8AAA\u7684\u5C0D\u8A71\u653E\u5728\u9019\uFF0C\u4F9D\u7167\u500B\u6027\u751F\u6210</dialog>"
   lan: 
   m_HistoryKeepCount: 15
   m_DataList: []
-  api_key: AIzaSyB7aOj_Rp8a5_mp8nJi9_VnsIKoTaCEsZQ
+  api_key: AIzaSyB9ybWBWU5TNfB24imio2dNT5eWRXfnHas
   m_PromptFuncSign: 
   m_PromptNotFuncSign: 
   m_PromptForVision: 
@@ -14235,7 +14235,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 96
+  m_fontSize: 72
   m_fontSizeBase: 96
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15647,7 +15647,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 54
+  m_fontSize: 72
   m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15711,8 +15711,8 @@ SceneRoots:
   - {fileID: 857197411}
   - {fileID: 67805152}
   - {fileID: 430760122}
+  - {fileID: 57271859}
   - {fileID: 1355456697}
   - {fileID: 681323830}
-  - {fileID: 57271859}
   - {fileID: 198213627}
   - {fileID: 956038658}
