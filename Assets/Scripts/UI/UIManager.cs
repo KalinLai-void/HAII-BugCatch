@@ -120,8 +120,8 @@ public class UIManager : MonoBehaviour
 
         switch (bugTag)
         {
-            case "Spider": nameCh = "蜘蛛"; break;
-            case "Termite": nameCh = "螞蟻"; break;
+            case "Spider": nameCh = "跳蛛"; break;
+            case "Termite": nameCh = "飛蟻(大水蟻)"; break;
             case "Bee": nameCh = "蜜蜂"; break;
             case "Cockroach": nameCh = "蟑螂"; break;
             case "Mosquito": nameCh = "蚊子"; break;

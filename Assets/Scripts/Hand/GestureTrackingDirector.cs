@@ -43,7 +43,7 @@ public class GestureTrackingDirector : MonoBehaviour
         preGesture = previousState.Analyze();
         nowGesture = currentState.Analyze();
 
-        if (preGesture != MeaningfulGesture.ThumbAndIndexClosed && 
+        if (preGesture != MeaningfulGesture.ThumbAndIndexClosed &&
             nowGesture == MeaningfulGesture.ThumbAndIndexClosed)
         {
             Debug.Log("Click!");
@@ -57,10 +57,11 @@ public class GestureTrackingDirector : MonoBehaviour
         else if (preGesture == MeaningfulGesture.Three &&
                  nowGesture == MeaningfulGesture.One)
         {
+            Destroy(GameManager.instance.gameObject);
             SceneManager.LoadScene(0);
         }
         else if (preGesture == MeaningfulGesture.Five &&
-                 nowGesture == MeaningfulGesture.None && 
+                 nowGesture == MeaningfulGesture.None &&
                  UIManager.instance.nowActiveUI == UIinGame.HUD)
         {
             if (GameManager.instance.isPaused) return;
