@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         nextTimeToSpawn = Random.Range(minSecToSpawn, maxSecToSpawn);
-        
+
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             spawnPointList.Add(gameObject.transform.GetChild(i));
@@ -42,17 +42,21 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        int index = Random.Range(0, bugList.Count);
+        try
+        {
+            int index = Random.Range(0, bugList.Count);
 
-        GameObject bug = bugList[index];
-        Transform spawnPoint = spawnPointList[Random.Range(0, spawnPointList.Count)];
+            GameObject bug = bugList[index];
+            Transform spawnPoint = spawnPointList[Random.Range(0, spawnPointList.Count)];
 
-        if (spawnPoint.childCount == 0)
-        { 
-            Instantiate(bug, spawnPoint);
-            audioSource.PlayOneShot(spawnBugSoundList[index]);
-            Debug.Log("[Spawn] Spawn " + bug.tag);
+            if (spawnPoint.childCount == 0)
+            {
+                Instantiate(bug, spawnPoint);
+                audioSource.PlayOneShot(spawnBugSoundList[index]);
+                Debug.Log("[Spawn] Spawn " + bug.tag);
+            }
+            else Spawn();
         }
-        else Spawn();
+        catch { }
     }
 }
