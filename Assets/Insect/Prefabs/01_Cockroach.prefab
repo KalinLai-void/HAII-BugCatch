@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1470153
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4261874
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63,6 +63,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_Name
       value: 01_Cockroach
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec3203cbf72aed54e89e326a2e53a7a2, type: 3}
       propertyPath: m_TagString

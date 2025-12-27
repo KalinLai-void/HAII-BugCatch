@@ -107,12 +107,17 @@ public class AimComtroller : MonoBehaviour
     public void CatchTarget()
     {
         if (!target || target.layer != LayerMask.NameToLayer("Bug")) return;
-        //Destroy(target);
-        //target = null;
+        UIManager.instance.SetBugTextToLLM(target.tag);
         bot.GetComponent<Animator>().SetTrigger("isCatching");
         audioSource.PlayOneShot(catchAudio);
-        UIManager.instance.TurnOnUI(UIinGame.bugCatchedUI);
         GameManager.instance.PauseGame();
+        Invoke("DestroyTarget", 3f);
+    }
+
+    private void DestroyTarget()
+    {
+        Destroy(target);
+        target = null;
     }
 
     public void SimulateMouseClickAt()

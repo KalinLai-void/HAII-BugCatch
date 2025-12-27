@@ -8,7 +8,11 @@ public class Timer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private float timerCountdownMins = 3;
 
+    [SerializeField] private AudioSource countdown30AudioSource;
+    [SerializeField] private AudioSource countdown10AudioSource;
+
     private float time;
+    private bool isPlaying30, isPlaying10;
 
     public bool isFinished = false;
 
@@ -28,8 +32,29 @@ public class Timer : MonoBehaviour
             time = 0;
             isFinished = true; 
         }
+        else if (time <= 31 && !isPlaying30)
+        {
+            countdown30AudioSource.Play();
+            isPlaying30 = true;
+        }
+        else if (time <= 11 && !isPlaying10)
+        {
+            countdown10AudioSource.Play();
+            isPlaying10 = true;
+        }
 
         UpdateUI();
+    }
+
+    public void PauseCountdownSFX()
+    {
+        countdown10AudioSource.Pause();
+        countdown30AudioSource.Pause();
+    }
+    public void PlayCountdownSFX()
+    {
+        if (isPlaying10) countdown10AudioSource.Play();
+        if (isPlaying30) countdown30AudioSource.Play();
     }
 
     private void UpdateUI()

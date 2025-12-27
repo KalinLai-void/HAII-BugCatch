@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.9351313
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4432368
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_LocalRotation.w
@@ -63,6 +63,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_Name
       value: 05_Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e5698e4de915cc40b2c0ebf998de220, type: 3}
       propertyPath: m_TagString

@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "com.dodo13114arch.ai-npc-services": "https://github.com/dodo13114arch/Unity-LLM-Driven-NPC-Package.git",
     "com.unity.ide.visualstudio": "2.0.25",
+    "com.unity.nuget.newtonsoft-json": "3.2.2",
     "com.unity.postprocessing": "3.4.0",
     "com.unity.textmeshpro": "3.0.9",
     "com.unity.modules.ai": "1.0.0",

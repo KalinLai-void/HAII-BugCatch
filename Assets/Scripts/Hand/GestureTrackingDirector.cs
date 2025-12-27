@@ -60,10 +60,16 @@ public class GestureTrackingDirector : MonoBehaviour
             SceneManager.LoadScene(0);
         }
         else if (preGesture == MeaningfulGesture.Five &&
-                 nowGesture == MeaningfulGesture.None)
+                 nowGesture == MeaningfulGesture.None && 
+                 UIManager.instance.nowActiveUI == UIinGame.HUD)
         {
             if (GameManager.instance.isPaused) return;
             AimComtroller.instance.CatchTarget();
+        }
+
+        if (UIManager.instance.nowActiveUI == UIinGame.bugCatchedUI)
+        {
+            // do something
         }
     }
 }

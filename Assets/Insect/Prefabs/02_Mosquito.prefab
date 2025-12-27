@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0896852
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.43922
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60,13 +60,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4513073426968786034, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_Name
       value: 02_Mosquito
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
       propertyPath: m_TagString
       value: Mosquito
+      objectReference: {fileID: 0}
+    - target: {fileID: 3882024296359079365, guid: 852a005617f5a634683b09f82266d2b1, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
